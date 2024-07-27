@@ -142,7 +142,6 @@ main {
             margin-top: 30px;
 }
 .hero-desc p {
-            letter-spacing: 1px;
             font-size: 1rem;
 }
 .hero-button {
@@ -152,7 +151,7 @@ main {
             gap: 15px;
 }
 .hero-button button {
-            padding: 15px 30px;
+            padding: 15px 40px;
             color: var(--heading-text-color);
             border-radius: 25px;
 }
@@ -216,9 +215,86 @@ main {
 .image-card-2 p {
             font-size: 0.80rem
 }
-
 /* main/hero section style end */
-
+/* habits section style start */
+.section-title {
+            max-width: 500px;
+            margin: auto;
+}
+.section-title h1 {
+            text-align: center;
+            font-size: 3rem;
+}
+.section-desc {
+            max-width: 670px;
+            margin: 20px auto;
+}
+.section-desc p {
+            text-align: center;
+}
+.workout {
+            padding: 50px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+}
+.box-image {
+            max-width: 200px;
+}
+.box-image img {
+            border-radius: 50%;
+            width: 100%;
+}
+.box-title {
+            max-width: 200px;
+            margin-top: 30px;
+}
+.box-title h4 {
+            font-size: 1.15rem;
+            text-align: center;
+}
+.box-desc {
+            max-width: 200px;
+            margin-top: 10px;
+}
+.box-desc p {
+            font-size: 0.85rem;
+            text-align: center;
+}
+.habits-card {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 15px;
+}
+.card-text {
+            max-width: 445px;
+            display: flex;
+            flex-direction: column;
+}
+.card-title {
+            max-width: 300px;
+}
+.card-desc {
+            margin-top: 30px;
+}
+.card-title h1 {
+            font-size: 3rem;
+}
+.card-image {
+            background: url("assets/run.jpg");
+            background-position: 730px 780px;
+            width: 365px;
+            min-height: 322px;
+            border-radius: 15px;
+}
+/* habits section style end */
 footer {
             padding: 10px 0px;
 }
@@ -229,15 +305,15 @@ footer {
             .container {
                         padding: 0px 25px;
             }
-            /* navbar style start */
+            /* navbar responsive style start */
             .nav-menu {
                         display: none;
             }
             .hamburger-icon {
                         display: block;
             }
-            /* navbar style end */
-            /* main/hero section style start */
+            /* navbar responsive style end */
+            /* main/hero section responsive style start */
             .hero-content {
                         flex-direction: column;
                         max-width: 350px;
@@ -261,5 +337,34 @@ footer {
                         bottom: -470px;
                         right: 50%;
             }
-            /* main/hero section style end */
+            /* main/hero section responsive style end */
+            /* habits section responsive style start */
+            .workout {
+                        flex-direction: column;
+            }
+            .section-title {
+                        max-width: 335px;
+            }
+            .section-title h1 {
+                        font-size: 2rem;
+            }
+            .section-desc {
+                        max-width: 335px;
+            }
+            .habits-card {
+                        flex-direction: column;
+            }
+            .card-title h1 {
+                        font-size: 2rem;
+            }
+            .card-image {
+                        background-position: 710px 780px;
+                        background-size: auto;
+                        width: 290px;
+                        min-height: 182px;
+            }
+            .card-button button {
+                        width: 100%;
+            }
+            /* habits section responsive style end */
 }

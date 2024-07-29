@@ -369,6 +369,49 @@ main {
             background-color: var(--button-color);
 }
 /* bmi calculator style end */
+/* our team section style start */
+.team-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 10px;
+}
+.team-box {
+            max-width: 340px;
+            max-height: 260px;
+            margin: auto;
+}
+.team-image {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            position: relative;
+            overflow: hidden;
+}
+.team-image img {
+            border-radius: 10px;
+            width: 340px;
+            height: 260px;
+            object-fit: cover;
+}
+.team-name-role {
+            margin: 20px;
+            position: relative;
+            bottom: 75px;
+            overflow: hidden;
+}
+.team-name-role span {
+            font-size: 15px;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            color: var(--description-text-color);
+}
+/* our team section style end */
 footer {
             padding: 10px 0px;
 }
@@ -458,4 +501,11 @@ footer {
                         grid-template-columns: 180px 180px;
             }
             /* bmi calculator section responsive style end */
+            /* team section responsive style start */
+            .team-wrapper {
+                        grid-template-columns: repeat(1, 1fr);
+                        justify-content: center;
+                        margin: auto;
+            }
+            /* team section responsive style end */
 }

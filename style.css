@@ -412,6 +412,68 @@ main {
             color: var(--description-text-color);
 }
 /* our team section style end */
+/* blog section style start */
+.blog-post-wrapper {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            justify-content: space-between;
+            align-items: center;
+}
+.post-box {
+            max-width: 250px;
+            border: 1px solid var(--description-text-color);
+            border-radius: 10px;
+            padding: 20px;
+}
+.post-image img {
+            border-radius: 10px;
+}
+.post-details {
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+}
+.post-details span {
+            font-size: 12px;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+            color: var(--description-text-color);
+}
+.post-title h4 {
+            text-align: center;
+}
+.post-title h4 a {
+            color: var(--heading-text-color);
+            transition: .5s;
+}
+.post-title h4 a:hover {
+            color: var(--description-text-color);
+}
+.blog-button {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+}
+.blog-button button {
+            padding: 15px 40px;
+            text-align: center;
+            border-radius: 25px;
+            color: var(--heading-text-color);
+            background-color: var(--button-color);
+            transition: .5s;
+}
+.blog-button button:hover {
+            border: 1px solid var(--description-text-color);
+            background: none;
+}
+/* blog section style end */
 footer {
             padding: 10px 0px;
 }
@@ -508,4 +570,12 @@ footer {
                         margin: auto;
             }
             /* team section responsive style end */
+            /* blog section responsive style start */
+            .blog-post-wrapper {
+                        grid-template-columns: repeat(1, 1fr);
+                        justify-content: center;
+                        margin: 50px auto;
+                        max-width: 250px;
+            }
+            /* blog section responsive style end */
 }

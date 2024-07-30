@@ -474,10 +474,51 @@ main {
             background: none;
 }
 /* blog section style end */
+/* footer section style start */
 footer {
-            padding: 10px 0px;
+            background-color: rgba(255, 255, 255, 0.10);
+            padding: 50px 0px;
 }
-
+.name-desc h1 {
+            color: var(--button-color);
+            font-style: italic;
+            font-size: 3.50rem;
+}
+.name-desc p {
+            max-width: 440px;
+            line-height: 30px;
+}
+.footer-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 50px;
+}
+.list h3 {
+            font-size: 2rem;
+}
+.list ul {
+            margin-top: 20px;
+}
+.list ul li a {
+            color: var(--description-text-color);
+            line-height: 30px;
+            transition: 0.5s;
+}
+.list ul li a:hover {
+            color: var(--button-color);
+}
+.copyright {
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 50px;
+            border-top: 1px solid var(--description-text-color);
+}
+.copyright span {
+            color: var(--button-color);
+}
+/* footer section style end */
 
 /* media query for mobile responsive */
 @media screen and (max-width: 576px) {
@@ -509,12 +550,12 @@ footer {
                         padding: 15px;
             }
             .image-card-1 {
-                        top: 145%;
+                        top: 75%;
                         right: 15px;
             }
             .image-card-2 {
-                        bottom: -470px;
-                        right: 50%;
+                        bottom: -115px;
+                        right: 45%;
             }
             /* main/hero section responsive style end */
             /* habits section responsive style start */
@@ -560,7 +601,7 @@ footer {
                         max-width: 320px;
             }
             .bmi-form form {
-                        grid-template-columns: 180px 180px;
+                        grid-template-columns: 150px 150px;
             }
             /* bmi calculator section responsive style end */
             /* team section responsive style start */
@@ -568,6 +609,9 @@ footer {
                         grid-template-columns: repeat(1, 1fr);
                         justify-content: center;
                         margin: auto;
+            }
+            .team-image img {
+                        width: 300px;
             }
             /* team section responsive style end */
             /* blog section responsive style start */
@@ -578,4 +622,14 @@ footer {
                         max-width: 250px;
             }
             /* blog section responsive style end */
+            /* footer section responsive style start */
+            .footer-content {
+                        flex-direction: column;
+                        margin-bottom: 30px;
+            }
+            .copyright {
+                        max-width: 218px;
+                        margin: auto;
+            }
+            /* footer section responsive style end */
 }

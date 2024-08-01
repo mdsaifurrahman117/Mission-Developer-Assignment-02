@@ -416,16 +416,23 @@ main {
 .blog-post-wrapper {
             margin-top: 50px;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 50px;
             justify-content: space-between;
             align-items: center;
 }
 .post-box {
-            max-width: 250px;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
             border: 1px solid var(--description-text-color);
             border-radius: 10px;
             padding: 20px;
+}
+.post-image {
+            max-width: 250px;
 }
 .post-image img {
             border-radius: 10px;
@@ -444,15 +451,35 @@ main {
             font-weight: 500;
             color: var(--description-text-color);
 }
-.post-title h4 {
+.post {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+}
+.post h4 {
             text-align: center;
 }
-.post-title h4 a {
+.post h4 a {
             color: var(--heading-text-color);
             transition: .5s;
 }
-.post-title h4 a:hover {
+.post h4 a:hover {
             color: var(--description-text-color);
+}
+.post p {
+            max-width: 250px;
+}
+.post-button {
+            padding: 15px 40px;
+            text-align: center;
+            border-radius: 25px;
+            color: var(--heading-text-color);
+            background-color: var(--button-color);
+            transition: .5s;
+}
+.post-button:hover {
+            border: 1px solid var(--description-text-color);
+            background: none;
 }
 .blog-button {
             display: flex;
@@ -620,6 +647,9 @@ footer {
                         justify-content: center;
                         margin: 50px auto;
                         max-width: 250px;
+            }
+            .post-box {
+                        flex-direction: column;
             }
             /* blog section responsive style end */
             /* footer section responsive style start */

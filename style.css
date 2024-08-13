@@ -63,7 +63,7 @@ button {
             font-family: "Inter", sans-serif;
             font-weight: 500;
 }
-input, select,option {
+input, select {
             background-color: var(--input-background);
             font-size: 1rem;
             color: var(--description-text-color);
@@ -74,7 +74,11 @@ input, select,option {
             padding: 15px 20px;
             text-align: left;
 }
-input:focus {
+option {
+            background: rgba(68, 68, 68, 0.5);
+            color: #000000;
+}
+input, select, option:focus {
             outline: none;
 }
 body {
@@ -367,6 +371,11 @@ main {
             color: var(--heading-text-color);
             border-radius: 25px;
             background-color: var(--button-color);
+            transition: 0.5s;
+}
+.bmi-calculator form button:hover {
+            background: none;
+            border: 1px solid #ffffff;
 }
 /* bmi calculator style end */
 /* our team section style start */
